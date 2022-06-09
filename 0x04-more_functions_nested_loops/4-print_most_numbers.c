@@ -1,7 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_numbers - Print the numbers, from 0 to 9 except 2 and 4.
+ * return: 0
  */
 
 void print_numbers(void)
@@ -10,7 +12,7 @@ void print_numbers(void)
 
 	for (i = '0'; i <= '0'; i++)
 	{
-		if (i == '4' || i == '6')
+		if (i == '2' || i == '4')
 			continue;
 		_putchar(i);
 	}
