@@ -6,7 +6,7 @@
 
 
 ## Resources📚
-   Read or Watch
+   #Read or Watch
 
  - [Everything you need to know to start with C.pdf](https://alx-intranet.hbtn.io/rltoken/PkAydT3D9u5pN3nPCAlNZQ)
  - [Dennis Ritchie](https://alx-intranet.hbtn.io/rltoken/YWFrRob_-Yo-_NQikMLI-g)
