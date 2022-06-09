@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
- * main - Print "alx" followed by a new line.
+ * main - Entry
  * Return: 0
  */
 
 int main(void)
 {
-	char name[] = "alx";
-	int i;
+	char word[9] = "_putchar";
+	int i = 0;
 
-	for (i = 0; i < 9; i++)
+	while (i < 8)
 	{
-		_putchar(name[i]);
+		_putchar(word[i]);
+		i++;
 	}
-
 	_putchar('\n');
-
 	return (0);
 }
