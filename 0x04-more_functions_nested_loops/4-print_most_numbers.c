@@ -10,7 +10,7 @@ void print_numbers(void)
 
 	for (i = '0'; i <= '0'; i++)
 	{
-		if (i == '2' || i == '4')
+		if (i == '4' || i == '6')
 			continue;
 		_putchar(i);
 	}
