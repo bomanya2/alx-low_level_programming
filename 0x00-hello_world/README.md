@@ -21,7 +21,7 @@
 
 ## Learning Objectives💡
 
-What i learned from this project:
+What i learned from this project
 
 - Why C programming is awesome
 - Who invented C
