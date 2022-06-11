@@ -40,7 +40,7 @@ What i learned from this project:
 - A function that prints 10 times the numbers, from 0 to 14, followed by a new line.
 ## 6. The shortest distance between two points is a straight line
 - The shortest distance between two points is a straight line
-## I feel like I am diagonally parked in a parallel universe
+## 7. I feel like I am diagonally parked in a parallel universe
 - A function that draws a diagonal line on the terminal.
 ## 8. You are so much sunshine in every square inch
 - A function that prints a square, followed by a new line.
