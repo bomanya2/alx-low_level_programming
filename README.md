@@ -5,3 +5,4 @@ Low level programming
 - 0x02. C - Functions, nested loops
 - 0x03. Debugging
 - 0x04. C - More functions, more nested loops
+- 0x05. C - Pointers, arrays and strings
