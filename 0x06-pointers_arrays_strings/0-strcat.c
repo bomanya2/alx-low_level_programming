@@ -1,24 +1,19 @@
 #include "main.h"
-/**
- *_strcat-concatenates a string.
- *@dest:destination string.
- *@src:source string.
- *
- *Return:Pointer to the cancated string.
- */
 
+/**
+ * *_strcat - Concatenate two strings
+ * @dest: Destiny string.
+ * @src: Source string.
+ * Return: Destiny spring dest.
+ */
 char *_strcat(char *dest, char *src)
 {
-	int i, m;
-/*Get the size of the destination string.*/
-	for (i = 0; dest[i] != '\0'; i++)
+	int index, size;
+
+	for (size = 0; dest[size] != '\0'; size++)
 		;
-	for (m = 0; src[m] != '\0'; m++)
-	{
-		dest[i] = src[m];
-		i++;
-	}
-	dest[i] = '\0';
+	for (index = size; src[index - size] != '\0'; index++)
+		dest[index] = src[index - size];
+	dest[index] = '\0';
 	return (dest);
 }
-
