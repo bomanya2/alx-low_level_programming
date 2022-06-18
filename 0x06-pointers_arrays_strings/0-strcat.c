@@ -1,19 +1,23 @@
 #include "main.h"
 
 /**
- * *_strcat - Concatenate two strings
- * @dest: Destiny string.
- * @src: Source string.
- * Return: Destiny string dest.
+ * _strcat - appends src to the dest string
+ * @dest: string to append by src
+ * @src: string to append to dest
+ *
+ * Return: address of dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int index, size;
+	int i, j;
 
-	for (size = 0; dest[size] != '\0'; size++)
-		;
-	for (index = size; src[index - size] != '\0'; index++)
-		dest[index] = src[index - size];
-	dest[index] = '\0';
+	i = j = 0;
+	while (*(dest + i))
+		i++;
+	while ((*(dest + i) = *(src + j)))
+	{
+		i++;
+		j++;
+	}
 	return (dest);
 }
