@@ -38,12 +38,6 @@ What i learned from this project:
 - A function that prints the sum of the two diagonals of a square matrix of integers.
 ## 8. Double pointer, double fun
 - A function that sets the value of a pointer to a char.
-## 9. strcpy
-- A function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
-## 10. Great leaders are willing to sacrifice the numbers to save the people
-- function that convert a string to an integer
-## 11. Don't hate the hacker, hate the code
-- program that generates random valid passwords for the program 101-crackme
 
 ## Author
 - [@bomanya2](https://www.github.com/bomanya2)
