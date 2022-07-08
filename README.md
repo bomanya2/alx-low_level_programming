@@ -12,3 +12,6 @@ Low level programming
 - 0x09. C - Static libraries
 - 0x0A- argc_argv
 - 0x0B. C - malloc, free
+- 0x0C. C - More malloc, free
+- 0x0D. C - Preprocessor
+- 0x0E. C - Structures, typedef 
