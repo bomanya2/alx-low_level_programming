@@ -1,12 +1,18 @@
 #ifndef MAIN_H
 
-#define MAIN_H
+#define	MAIN_H
 
 
 
-#include <stdio.h>
+/*
+ *
+ *  * Desc: Header file containing prototypes for all functions
+ *
+ *   *       written in the 0x15-file_io directory.
+ *
+ *    */
 
-#include <stdlib.h>
+
 
 #include <sys/types.h>
 
@@ -26,6 +32,6 @@ int create_file(const char *filename, char *text_content);
 
 int append_text_to_file(const char *filename, char *text_content);
 
-int main(int argc, char **argv);
+
 
 #endif
