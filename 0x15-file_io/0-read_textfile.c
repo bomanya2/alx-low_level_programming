@@ -1,99 +1,77 @@
 #include "main.h"
 
+#include <stdlib.h>
+
 
 
 /**
  *
- *  * read_textfile - Read a text file and prints it to the POSIX standard output.
+ *  * read_textfile - Reads a text file and prints it to POSIX stdout.
  *
- *   * @filename: File name.
+ *   * @filename: A pointer to the name of the file.
  *
- *    * @letters:The number of letters it should read and print.
+ *    * @letters: The number of letters the
  *
- *     * Return: The actual number of letters it could read and print.
+ *     *           function should read and print.
  *
- *      */
+ *      *
+ *
+ *       * Return: If the function fails or filename is NULL - 0.
+ *
+ *        *         O/w - the actual number of bytes the function can read and print.
+ *
+ *         */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 
 {
 
-		int fd;/*File descriptor*/
+		ssize_t o, r, w;
 
-			ssize_t n_chars;
-
-				char *buf = NULL;
+			char *buffer;
 
 
 
-					if (filename == NULL)
+				if (filename == NULL)
 
-								return (0);
-
-
-
-						/*Read file*/
+							return (0);
 
 
 
-						fd = open(filename, O_RDONLY);
+					buffer = malloc(sizeof(char) * letters);
+
+						if (buffer == NULL)
+
+									return (0);
 
 
 
-							if (fd == -1)
+							o = open(filename, O_RDONLY);
 
-										return (0);
+								r = read(o, buffer, letters);
 
-
-
-								/*Allocate memory*/
-
-								buf = malloc(letters * sizeof(char));
-
-									if (buf == NULL)
-
-												return (0);
+									w = write(STDOUT_FILENO, buffer, r);
 
 
 
-										n_chars = read(fd, buf, letters);
+										if (o == -1 || r == -1 || w == -1 || w != r)
+
+												{
+
+															free(buffer);
+
+																	return (0);
+
+																		}
 
 
 
-											if (n_chars < 0)
+											free(buffer);
 
-													{
-
-																free(buf);
-
-																		return (0);
-
-																			}
+												close(o);
 
 
 
-												n_chars = write(STDOUT_FILENO, buf, n_chars);
-
-
-
-													if (n_chars < 0)
-
-															{
-
-																		free(buf);
-
-																				return (0);
-
-																					}
-
-
-
-														free(buf);
-
-															close(fd);
-
-
-
-																return (n_chars);
+													return (w);
 
 }
